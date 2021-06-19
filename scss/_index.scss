@@ -1,0 +1,142 @@
+.tracking-1 {
+  letter-spacing: .04375rem;
+}
+.tracking-2 {
+  letter-spacing: .125rem;
+}
+.tracking-3 {
+  letter-spacing: .1875rem;
+}
+
+.border-low-half {
+  border: 1px solid $info;
+  border-radius: 0 0 8px 8px;
+}
+
+.event-align-center {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+// btn setting
+.btn-warning{
+  color: $dark;
+  transition: .5s;
+  &:hover{
+    border-color: $danger;
+    background-color: $danger;
+    color: white;
+  }
+}
+.btn-outline-secondary {
+  transition: .5s;
+  &:hover{
+    background-color: $warning;
+    border-color: $warning;
+    color: $secondary;
+    .custom-heart {
+      color: $danger;
+    }
+  }
+}
+.btn-secondary {
+  transition: .5s;
+  &:hover {
+    background-color: #97968b;
+    border-color: #918f85;
+  }
+}
+
+// font type
+.font-baloo-tamma-2 {
+  font-family: $font-family-baloo-tamma-2;
+}
+
+// font coloe
+.text-dark {
+  color: $dark;
+}
+.text-secondary {
+  color: $secondary;
+}
+.text-warning {
+  color: $warning; 
+} 
+.text-gray {
+  color: #373A3C;
+}
+
+// icon
+.square-2 {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+.square-3 {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+@media (min-width: 768px) {
+  .square-md-2 {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+  }
+} 
+
+// nav
+.nav .active {
+  font-weight: bold;
+  border-bottom: 2px solid $warning;
+}
+
+.nav-link {
+  // &:hover{
+  //   border-bottom: 2px map-get($theme-colors, 'success') solid;
+  // }
+  &.active {
+    color: #636057;
+    font-weight: bold;
+    border-bottom: 2px map-get($theme-colors, 'warning') solid;
+  }
+}
+
+.form-select {
+  color: #999999;
+  border: none;         
+  border-color: #f8f9fa; 
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e");
+  padding-left: 1rem;
+}
+
+// right-side
+.profile-card {
+  border: 1px solid $info;
+  border-radius: .5rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  &__icon > i {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%); 
+  }
+}
+.right-side-sticky {
+  position: sticky; 
+  overflow: scroll;
+  top: calc(76px + 3rem);
+  height: calc(100vh - 82px);
+}
+
+footer {
+  color: #fff;
+  background-color: #494846;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  padding: 1.5rem;
+}

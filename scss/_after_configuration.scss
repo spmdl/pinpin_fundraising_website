@@ -1,0 +1,31 @@
+// $theme-colors: map-merge($theme-colors, $custom-colors);
+
+$utilities: (
+    "font-family": (
+        property: font-family,
+        class: font,
+        values: (
+          noto-sans: var(--#{$variable-prefix}font-family-noto-sans), 
+        ),
+    ),
+    "font-size-mobile": (
+      property: font-size,
+      class: fs,
+      values: $font-sizes-mobile
+    ),
+    "rounded": (
+      property: border-radius,
+      class: rounded,
+      values: (
+        null: $border-radius,
+        0: 0,
+        1: $border-radius-sm,
+        2: $border-radius,
+        3: $border-radius-lg,
+        4: .5rem,
+        circle: 50%,
+        pill: $border-radius-pill
+      )
+    ),
+);
+

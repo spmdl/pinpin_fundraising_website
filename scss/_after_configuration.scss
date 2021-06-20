@@ -1,31 +1,40 @@
-// $theme-colors: map-merge($theme-colors, $custom-colors);
+@import './bootstrap/utilities';
+$theme-colors: map-merge($theme-colors, $custom-colors);
+$spacers: map-merge($spacers, $custom-spacers);
 
 $utilities: (
-    "font-family": (
-        property: font-family,
-        class: font,
-        values: (
-          noto-sans: var(--#{$variable-prefix}font-family-noto-sans), 
-        ),
-    ),
-    "font-size-mobile": (
-      property: font-size,
-      class: fs,
-      values: $font-sizes-mobile
-    ),
-    "rounded": (
-      property: border-radius,
-      class: rounded,
-      values: (
-        null: $border-radius,
-        0: 0,
-        1: $border-radius-sm,
-        2: $border-radius,
-        3: $border-radius-lg,
-        4: .5rem,
-        circle: 50%,
-        pill: $border-radius-pill
+  "font-family": map-merge(
+    map-get($utilities, "font-family"),
+    (
+      values: map-merge(
+        map-get(map-get($utilities, "font-family"), "values"),
+        (noto-sans: var(--#{$variable-prefix}font-family-noto-sans))
+      ),
+    )
+  ),
+  "font-size-mobile": (
+    property: font-size,
+    class: fs,
+    values: $font-sizes-mobile
+  ),
+  "font-size": map-merge(
+    map-get($utilities, "font-size"),
+    (
+      responsive: true,
+      values: map-merge(
+        map-get(map-get($utilities, "font-size"), "values"),
+        $custom-font-sizes,
       )
-    ),
+    )
+  ),
+  "rounded": map-merge(
+    map-get($utilities, "rounded"),
+    (
+      values: map-merge(
+        map-get(map-get($utilities, "rounded"), "values"),
+        (4: .5rem),
+      )
+    )  
+  )
 );
 

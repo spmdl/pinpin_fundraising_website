@@ -2,13 +2,13 @@
 $secondary:     #858377;
 $warning:       #FFDF65;
 $dark:          #636057;
-$info:         #E8E8DB;
-$gray:         #373A3C;
+$info:          #E8E8DB;
+$gray:          #373A3C;
 $danger:        #FF785E;
 
-// $custom-colors: (
-//   "gray": $gray,
-// );
+$custom-colors: (
+  "gray": $gray,
+);
 $body-color:    #494846;
 
 // Font
@@ -30,31 +30,19 @@ $tooltip-bg:     $body-color;
 
 // scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
-$spacers: (
-  0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
-  6: $spacer * 2,
-  7: $spacer * 1.25,
-  8: $spacer * .3,
-  9: $spacer * .875,
-  10: 5px,
-) !default;
+$custom-spacers: (
+  4: $spacer * 2,
+  6: 5px,
+  7: $spacer * .875, //14
+  8: $spacer * 1.25, //20
+  9: $spacer * 1.5, //24
+);
 
 // scss-docs-start font-sizes
-$font-size-base: 1rem;
-$font-sizes: (
-  1: $font-size-base * 2.5,
-  2: $font-size-base * 2,
-  3: $font-size-base * 1.75,
-  4: $font-size-base * 1.5,
-  5: $font-size-base * 1.25,
-  6: $font-size-base,
+$custom-font-sizes: (
   7: 1.25rem,
-) !default;
+);
+
 
 $font-sizes-mobile: (
   mobile-1:24px,
@@ -65,6 +53,7 @@ $font-sizes-mobile: (
   mobile-6:12px,
 ) !default;
 
+// :root：global variable setting
 :root {
   --#{$variable-prefix}font-family-noto-sans: #{inspect(
           $font-family-noto-sans

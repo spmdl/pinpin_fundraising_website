@@ -11,6 +11,9 @@ $custom-colors: (
 );
 $body-color:    #494846;
 
+// Border
+$border-color:  #E5E5E5;
+
 // Font
 $font-weight-bold: 600;
 $font-family-noto-sans: "Noto Sans TC", sans-serif;
@@ -39,8 +42,11 @@ $custom-spacers: (
 );
 
 // scss-docs-start font-sizes
+$font-size-base: 1rem !default;
 $custom-font-sizes: (
-  7: 1.25rem,
+  7: $font-size-base * .25,  //14
+  8: $font-size-base * 1.25, //20
+  9: $font-size-base * 1.5, //24
 );
 
 

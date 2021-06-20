@@ -58,15 +58,15 @@
 .text-dark {
   color: $dark;
 }
-.text-secondary {
-  color: $secondary;
-}
-.text-warning {
-  color: $warning; 
-} 
-.text-gray {
-  color: #373A3C;
-}
+// .text-secondary {
+//   color: $secondary;
+// }
+// .text-warning {
+//   color: $warning; 
+// } 
+// .text-gray {
+//   color: #373A3C;
+// }
 
 // icon
 .square-2 {
@@ -113,17 +113,11 @@
 }
 
 // right-side
-.profile-card {
-  border: 1px solid $info;
-  border-radius: .5rem;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
-  &__icon > i {
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%,-50%); 
-  }
+.vertical-icon {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%); 
 }
 .right-side-sticky {
   position: sticky; 

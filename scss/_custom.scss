@@ -5,11 +5,13 @@ $dark:          #636057;
 $info:          #E8E8DB;
 $gray:          #373A3C;
 $danger:        #FF785E;
+$brown:         #494846;
 
 $custom-colors: (
   "gray": $gray,
+  "brown": $brown,
 );
-$body-color:    #494846;
+$body-color:    $brown;
 
 // Border
 $border-color:  #E5E5E5;
@@ -49,6 +51,17 @@ $custom-font-sizes: (
   9: $font-size-base * 1.5, //24
 );
 
+$icon-size: (
+  1: 20px,
+  2: 24px,
+  3: 30px,
+);
+
+$tracking: (
+  1: .04375rem,
+  2: .125rem,
+  3: .1875rem,
+);
 
 $font-sizes-mobile: (
   mobile-1:24px,

@@ -12,6 +12,18 @@ $utilities: (
       ),
     )
   ),
+  "tracking": (
+    responsive: true,
+    property: letter-spacing,
+    class: tracking,
+    values: $tracking
+  ),
+  "icon-size": (
+    responsive: true,
+    property: width height,
+    class: icon-size,
+    values: $icon-size
+  ),
   "font-size-mobile": (
     property: font-size,
     class: fs,

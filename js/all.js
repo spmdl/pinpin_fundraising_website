@@ -4,18 +4,32 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 
-// click nav&tab go there 
+// event height to top
+var form = document.getElementById("form");
+var tabContent = document.getElementsByClassName("tab-content")[0];
+function heightToTop(element) {
+  let bridge = element;
+  let root = document.body;
+  let height = 0;
+  do {
+    height += bridge.offsetTop;
+    bridge = bridge.offsetParent;
+  } while (bridge !== root);
+  return height;
+}
+
+// click nav tab go there 
 function goToTab() {
   window.scrollTo({
-    top: 1010,
+    top: heightToTop(tabContent) - 100,
     behavior: "smooth",
   });
 }
 // click go to form
 function goToForm() { 
-  // 4125 代表 form 置頂時滾動軸的高度 - 150 預留空白高度
+  // 170 預留空白高度
   window.scrollTo({
-    top: 4125 - 150,
+    top: heightToTop(form) - 170,
     behavior: "smooth",
   });
 }
@@ -27,7 +41,7 @@ window.onscroll = function () {
   const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
   const navIsSticky = window.pageYOffset > 1000
   const scrollIsBottom = scrollTop + document.documentElement.clientHeight < document.body.scrollHeight - 190
-  if (bottomBtn !== null && document.body.offsetWidth < 768) {
+  if (bottomBtn !== null && document.body.offsetWidth < 992) {
     if(navIsSticky && scrollIsBottom) {
       bottomBtn.classList.remove('d-none');
     }else{

@@ -179,7 +179,7 @@ blockquote {
 
 b,
 strong {
-  font-weight: bolder;
+  font-weight: 500;
 }
 
 small, .small {
@@ -8743,10 +8743,14 @@ fieldset:disabled .btn {
 }
 
 .fs-8 {
-  font-size: 1.25rem !important;
+  font-size: 1.125rem !important;
 }
 
 .fs-9 {
+  font-size: 1.25rem !important;
+}
+
+.fs-10 {
   font-size: calc(1.275rem + 0.3vw) !important;
 }
 
@@ -8775,7 +8779,7 @@ fieldset:disabled .btn {
 }
 
 .fw-bolder {
-  font-weight: bolder !important;
+  font-weight: 500 !important;
 }
 
 .lh-1 {
@@ -9889,9 +9893,12 @@ fieldset:disabled .btn {
     font-size: 0.875rem !important;
   }
   .fs-sm-8 {
-    font-size: 1.25rem !important;
+    font-size: 1.125rem !important;
   }
   .fs-sm-9 {
+    font-size: 1.25rem !important;
+  }
+  .fs-sm-10 {
     font-size: calc(1.275rem + 0.3vw) !important;
   }
   .text-sm-start {
@@ -10710,9 +10717,12 @@ fieldset:disabled .btn {
     font-size: 0.875rem !important;
   }
   .fs-md-8 {
-    font-size: 1.25rem !important;
+    font-size: 1.125rem !important;
   }
   .fs-md-9 {
+    font-size: 1.25rem !important;
+  }
+  .fs-md-10 {
     font-size: calc(1.275rem + 0.3vw) !important;
   }
   .text-md-start {
@@ -11531,9 +11541,12 @@ fieldset:disabled .btn {
     font-size: 0.875rem !important;
   }
   .fs-lg-8 {
-    font-size: 1.25rem !important;
+    font-size: 1.125rem !important;
   }
   .fs-lg-9 {
+    font-size: 1.25rem !important;
+  }
+  .fs-lg-10 {
     font-size: calc(1.275rem + 0.3vw) !important;
   }
   .text-lg-start {
@@ -12352,9 +12365,12 @@ fieldset:disabled .btn {
     font-size: 0.875rem !important;
   }
   .fs-xl-8 {
-    font-size: 1.25rem !important;
+    font-size: 1.125rem !important;
   }
   .fs-xl-9 {
+    font-size: 1.25rem !important;
+  }
+  .fs-xl-10 {
     font-size: calc(1.275rem + 0.3vw) !important;
   }
   .text-xl-start {
@@ -13173,9 +13189,12 @@ fieldset:disabled .btn {
     font-size: 0.875rem !important;
   }
   .fs-xxl-8 {
-    font-size: 1.25rem !important;
+    font-size: 1.125rem !important;
   }
   .fs-xxl-9 {
+    font-size: 1.25rem !important;
+  }
+  .fs-xxl-10 {
     font-size: calc(1.275rem + 0.3vw) !important;
   }
   .text-xxl-start {
@@ -13223,7 +13242,7 @@ fieldset:disabled .btn {
   .fs-4 {
     font-size: 1.5rem !important;
   }
-  .fs-9 {
+  .fs-10 {
     font-size: 1.5rem !important;
   }
   .fs-sm-1 {
@@ -13238,7 +13257,7 @@ fieldset:disabled .btn {
   .fs-sm-4 {
     font-size: 1.5rem !important;
   }
-  .fs-sm-9 {
+  .fs-sm-10 {
     font-size: 1.5rem !important;
   }
   .fs-md-1 {
@@ -13253,7 +13272,7 @@ fieldset:disabled .btn {
   .fs-md-4 {
     font-size: 1.5rem !important;
   }
-  .fs-md-9 {
+  .fs-md-10 {
     font-size: 1.5rem !important;
   }
   .fs-lg-1 {
@@ -13268,7 +13287,7 @@ fieldset:disabled .btn {
   .fs-lg-4 {
     font-size: 1.5rem !important;
   }
-  .fs-lg-9 {
+  .fs-lg-10 {
     font-size: 1.5rem !important;
   }
 }

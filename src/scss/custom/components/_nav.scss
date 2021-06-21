@@ -1,0 +1,11 @@
+.nav-link {
+  &:hover{
+    color: $dark;
+    font-weight: bold;
+  }
+  &.active {
+    color: $dark;
+    font-weight: bold;
+    border-bottom: 2px solid map-get($theme-colors, 'warning');
+  }
+}

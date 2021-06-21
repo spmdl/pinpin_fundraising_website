@@ -1,33 +1,34 @@
-@import './bootstrap/utilities';
+@import '../../bootstrap/utilities';
 $theme-colors: map-merge($theme-colors, $custom-colors);
 $spacers: map-merge($spacers, $custom-spacers);
 
 $utilities: (
-  "font-family": map-merge(
-    map-get($utilities, "font-family"),
-    (
-      values: map-merge(
-        map-get(map-get($utilities, "font-family"), "values"),
-        (noto-sans: var(--#{$variable-prefix}font-family-noto-sans))
-      ),
+  "font-family": (
+    property: font-family,
+    class: font,
+    values: (
+      noto-sans: $font-family-noto-sans,
+      baloo-tamma-2: $font-family-baloo-tamma-2,
     )
   ),
-  "tracking": (
-    responsive: true,
+  "letter-spacing": (
     property: letter-spacing,
     class: tracking,
-    values: $tracking
+    values: (
+      1: .04375rem,
+      2: .125rem,
+      3: .1875rem,
+    )
   ),
   "icon-size": (
     responsive: true,
     property: width height,
     class: icon-size,
-    values: $icon-size
-  ),
-  "font-size-mobile": (
-    property: font-size,
-    class: fs,
-    values: $font-sizes-mobile
+    values: (
+      1: 20px,
+      2: 24px,
+      3: 30px,
+    )
   ),
   "font-size": map-merge(
     map-get($utilities, "font-size"),

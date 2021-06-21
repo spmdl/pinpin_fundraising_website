@@ -2200,22 +2200,22 @@ progress {
 }
 
 .col-form-label {
-  padding-top: calc(0.375rem + 1px);
-  padding-bottom: calc(0.375rem + 1px);
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
   margin-bottom: 0;
   font-size: inherit;
   line-height: 1.5;
 }
 
 .col-form-label-lg {
-  padding-top: calc(0.5rem + 1px);
-  padding-bottom: calc(0.5rem + 1px);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   font-size: 1.25rem;
 }
 
 .col-form-label-sm {
-  padding-top: calc(0.25rem + 1px);
-  padding-bottom: calc(0.25rem + 1px);
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   font-size: 0.875rem;
 }
 
@@ -2235,7 +2235,7 @@ progress {
   color: #494846;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 0 solid #ced4da;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -2319,7 +2319,7 @@ progress {
   border-color: inherit;
   border-style: solid;
   border-width: 0;
-  border-inline-end-width: 1px;
+  border-inline-end-width: 0;
   border-radius: 0;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -2353,7 +2353,7 @@ progress {
   border-color: inherit;
   border-style: solid;
   border-width: 0;
-  border-inline-end-width: 1px;
+  border-inline-end-width: 0;
   border-radius: 0;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -2381,7 +2381,7 @@ progress {
   color: #494846;
   background-color: transparent;
   border: solid transparent;
-  border-width: 1px 0;
+  border-width: 0 0;
 }
 
 .form-control-plaintext.form-control-sm, .form-control-plaintext.form-control-lg {
@@ -2390,7 +2390,7 @@ progress {
 }
 
 .form-control-sm {
-  min-height: calc(1.5em + 0.5rem + 2px);
+  min-height: calc(1.5em + 0.5rem);
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.2rem;
@@ -2411,7 +2411,7 @@ progress {
 }
 
 .form-control-lg {
-  min-height: calc(1.5em + 1rem + 2px);
+  min-height: calc(1.5em + 1rem);
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   border-radius: 0.3rem;
@@ -2432,15 +2432,15 @@ progress {
 }
 
 textarea.form-control {
-  min-height: calc(1.5em + 0.75rem + 2px);
+  min-height: calc(1.5em + 0.75rem);
 }
 
 textarea.form-control-sm {
-  min-height: calc(1.5em + 0.5rem + 2px);
+  min-height: calc(1.5em + 0.5rem);
 }
 
 textarea.form-control-lg {
-  min-height: calc(1.5em + 1rem + 2px);
+  min-height: calc(1.5em + 1rem);
 }
 
 .form-control-color {
@@ -2474,13 +2474,13 @@ textarea.form-control-lg {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #494846;
+  color: #999999;
   background-color: #fff;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
   background-size: 16px 12px;
-  border: 1px solid #ced4da;
+  border: 0 solid #ced4da;
   border-radius: 0.25rem;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -2505,7 +2505,7 @@ textarea.form-control-lg {
 
 .form-select:-moz-focusring {
   color: transparent;
-  text-shadow: 0 0 0 #494846;
+  text-shadow: 0 0 0 #999999;
 }
 
 .form-select-sm {
@@ -2764,7 +2764,7 @@ textarea.form-control-lg {
 
 .form-floating > .form-control,
 .form-floating > .form-select {
-  height: calc(3.5rem + 2px);
+  height: 3.5rem;
   padding: 1rem 0.75rem;
 }
 
@@ -2775,7 +2775,7 @@ textarea.form-control-lg {
   height: 100%;
   padding: 1rem 0.75rem;
   pointer-events: none;
-  border: 1px solid transparent;
+  border: 0 solid transparent;
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
   -webkit-transition: opacity 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
@@ -2888,7 +2888,7 @@ textarea.form-control-lg {
   text-align: center;
   white-space: nowrap;
   background-color: #e9ecef;
-  border: 1px solid #ced4da;
+  border: 0 solid #ced4da;
   border-radius: 0.25rem;
 }
 
@@ -2928,7 +2928,7 @@ textarea.form-control-lg {
 }
 
 .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
-  margin-left: -1px;
+  margin-left: 0;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -2988,7 +2988,7 @@ textarea.form-control-lg {
 
 .was-validated .form-select:valid:not([multiple]):not([size]), .was-validated .form-select:valid:not([multiple])[size="1"], .form-select.is-valid:not([multiple]):not([size]), .form-select.is-valid:not([multiple])[size="1"] {
   padding-right: 4.125rem;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
   background-position: right 0.75rem center, center right 2.25rem;
   background-size: 16px 12px, calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
@@ -3081,7 +3081,7 @@ textarea.form-control-lg {
 
 .was-validated .form-select:invalid:not([multiple]):not([size]), .was-validated .form-select:invalid:not([multiple])[size="1"], .form-select.is-invalid:not([multiple]):not([size]), .form-select.is-invalid:not([multiple])[size="1"] {
   padding-right: 4.125rem;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23FF785E'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23FF785E' stroke='none'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23FF785E'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23FF785E' stroke='none'/%3e%3c/svg%3e");
   background-position: right 0.75rem center, center right 2.25rem;
   background-size: 16px 12px, calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
@@ -8706,12 +8706,12 @@ fieldset:disabled .btn {
   padding-left: 1.5rem !important;
 }
 
-.font-monospace {
-  font-family: var(--bs-font-monospace) !important;
+.font-noto-sans {
+  font-family: "Noto Sans TC", sans-serif !important;
 }
 
-.font-noto-sans {
-  font-family: var(--bs-font-family-noto-sans) !important;
+.font-baloo-tamma-2 {
+  font-family: "Baloo Tamma 2" !important;
 }
 
 .fs-1 {
@@ -9083,30 +9083,6 @@ fieldset:disabled .btn {
 .icon-size-3 {
   width: 30px !important;
   height: 30px !important;
-}
-
-.fs-mobile-1 {
-  font-size: 24px !important;
-}
-
-.fs-mobile-2 {
-  font-size: 20px !important;
-}
-
-.fs-mobile-3 {
-  font-size: 18px !important;
-}
-
-.fs-mobile-4 {
-  font-size: 16px !important;
-}
-
-.fs-mobile-5 {
-  font-size: 14px !important;
-}
-
-.fs-mobile-6 {
-  font-size: 12px !important;
 }
 
 @media (min-width: 576px) {
@@ -9909,15 +9885,6 @@ fieldset:disabled .btn {
   }
   .text-sm-center {
     text-align: center !important;
-  }
-  .tracking-sm-1 {
-    letter-spacing: 0.04375rem !important;
-  }
-  .tracking-sm-2 {
-    letter-spacing: 0.125rem !important;
-  }
-  .tracking-sm-3 {
-    letter-spacing: 0.1875rem !important;
   }
   .icon-size-sm-1 {
     width: 20px !important;
@@ -10734,15 +10701,6 @@ fieldset:disabled .btn {
   .text-md-center {
     text-align: center !important;
   }
-  .tracking-md-1 {
-    letter-spacing: 0.04375rem !important;
-  }
-  .tracking-md-2 {
-    letter-spacing: 0.125rem !important;
-  }
-  .tracking-md-3 {
-    letter-spacing: 0.1875rem !important;
-  }
   .icon-size-md-1 {
     width: 20px !important;
     height: 20px !important;
@@ -11557,15 +11515,6 @@ fieldset:disabled .btn {
   }
   .text-lg-center {
     text-align: center !important;
-  }
-  .tracking-lg-1 {
-    letter-spacing: 0.04375rem !important;
-  }
-  .tracking-lg-2 {
-    letter-spacing: 0.125rem !important;
-  }
-  .tracking-lg-3 {
-    letter-spacing: 0.1875rem !important;
   }
   .icon-size-lg-1 {
     width: 20px !important;
@@ -12382,15 +12331,6 @@ fieldset:disabled .btn {
   .text-xl-center {
     text-align: center !important;
   }
-  .tracking-xl-1 {
-    letter-spacing: 0.04375rem !important;
-  }
-  .tracking-xl-2 {
-    letter-spacing: 0.125rem !important;
-  }
-  .tracking-xl-3 {
-    letter-spacing: 0.1875rem !important;
-  }
   .icon-size-xl-1 {
     width: 20px !important;
     height: 20px !important;
@@ -13206,15 +13146,6 @@ fieldset:disabled .btn {
   .text-xxl-center {
     text-align: center !important;
   }
-  .tracking-xxl-1 {
-    letter-spacing: 0.04375rem !important;
-  }
-  .tracking-xxl-2 {
-    letter-spacing: 0.125rem !important;
-  }
-  .tracking-xxl-3 {
-    letter-spacing: 0.1875rem !important;
-  }
   .icon-size-xxl-1 {
     width: 20px !important;
     height: 20px !important;
@@ -13330,35 +13261,6 @@ fieldset:disabled .btn {
   }
 }
 
-.font-baloo-tamma-2 {
-  font-family: "Baloo Tamma 2";
-}
-
-[vertical-center] {
-  color: white;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.event-align-center {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.text-justify {
-  text-align: justify;
-}
-
-.border-low-half {
-  border: 1px solid #E8E8DB;
-  border-radius: 0 0 8px 8px;
-}
-
 .btn-warning {
   color: #636057;
   -webkit-transition: .5s;
@@ -13414,19 +13316,36 @@ fieldset:disabled .btn {
   border-bottom: 2px solid #FFDF65;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
+.event-align-center {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+[vertical-center] {
+  color: white;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.border-low-half {
+  border: 1px solid #E8E8DB;
+  border-radius: 0 0 8px 8px;
+}
+
 .right-side-sticky {
   position: -webkit-sticky;
   position: sticky;
   overflow: scroll;
   top: calc(76px + 3rem);
   height: calc(100vh - 82px);
-}
-
-.form-select {
-  color: #999999;
-  border: none;
-  border-color: #f8f9fa;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e");
-  padding-left: 1rem;
 }
 /*# sourceMappingURL=all.css.map */

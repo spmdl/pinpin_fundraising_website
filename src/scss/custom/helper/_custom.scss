@@ -1,0 +1,16 @@
+.text-justify{
+  text-align: justify;
+}
+.event-align-center {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+@mixin sticky-effect ($top, $height) {
+  position: sticky;
+  overflow: scroll;
+  top: $top;
+  height: $height;
+}

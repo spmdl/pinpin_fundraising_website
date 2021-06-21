@@ -1,0 +1,14 @@
+[vertical-center] {
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%); 
+}
+.border-low-half {
+  border: 1px solid $info;
+  border-radius: 0 0 8px 8px;
+}
+
+.right-side-sticky {
+  @include sticky-effect(calc(76px + 3rem), calc(100vh - 82px))
+}

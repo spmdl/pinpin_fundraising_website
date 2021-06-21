@@ -1,0 +1,24 @@
+$btn-types: (
+  warning: $dark #fff $danger $danger,
+  outline-secondary: $secondary $secondary $warning $warning,
+  secondary: $secondary #fff $warning $warning,
+);
+@mixin btn-hover($color, $border-color, $background-color) {
+  color: $color;
+  border-color: $border-color;
+  background-color: $background-color;
+}
+@each $key, $value in $btn-types {
+  .btn-#{$key} {
+    color: nth($value, 1);
+    transition: .5s;
+    &:hover {
+      @include btn-hover(nth($value, 2), nth($value, 3), nth($value, 4));
+      @if $key != warning {
+        .custom-heart {
+          color: $danger;
+        }
+      }
+    }
+  }
+}

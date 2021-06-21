@@ -53,26 +53,13 @@ $custom-font-sizes: (
   10: $font-size-base * 1.5, //24
 );
 
-$icon-size: (
-  1: 20px,
-  2: 24px,
-  3: 30px,
-);
-
-$tracking: (
-  1: .04375rem,
-  2: .125rem,
-  3: .1875rem,
-);
-
-$font-sizes-mobile: (
-  mobile-1:24px,
-  mobile-2:20px,
-  mobile-3:18px,
-  mobile-4:16px,
-  mobile-5:14px,
-  mobile-6:12px,
-) !default;
+// Forms
+// form-input-variables
+$input-border-width: 0;
+// form-select-variables
+$form-select-color: #999999;
+$form-select-indicator-color: #f8f9fa !default;
+$form-select-indicator: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e");
 
 // :root：global variable setting
 :root {

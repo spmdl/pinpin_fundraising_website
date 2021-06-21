@@ -8739,7 +8739,7 @@ fieldset:disabled .btn {
 }
 
 .fs-7 {
-  font-size: 0.25rem !important;
+  font-size: 0.875rem !important;
 }
 
 .fs-8 {
@@ -9886,7 +9886,7 @@ fieldset:disabled .btn {
     font-size: 1rem !important;
   }
   .fs-sm-7 {
-    font-size: 0.25rem !important;
+    font-size: 0.875rem !important;
   }
   .fs-sm-8 {
     font-size: 1.25rem !important;
@@ -10707,7 +10707,7 @@ fieldset:disabled .btn {
     font-size: 1rem !important;
   }
   .fs-md-7 {
-    font-size: 0.25rem !important;
+    font-size: 0.875rem !important;
   }
   .fs-md-8 {
     font-size: 1.25rem !important;
@@ -11528,7 +11528,7 @@ fieldset:disabled .btn {
     font-size: 1rem !important;
   }
   .fs-lg-7 {
-    font-size: 0.25rem !important;
+    font-size: 0.875rem !important;
   }
   .fs-lg-8 {
     font-size: 1.25rem !important;
@@ -12349,7 +12349,7 @@ fieldset:disabled .btn {
     font-size: 1rem !important;
   }
   .fs-xl-7 {
-    font-size: 0.25rem !important;
+    font-size: 0.875rem !important;
   }
   .fs-xl-8 {
     font-size: 1.25rem !important;
@@ -13170,7 +13170,7 @@ fieldset:disabled .btn {
     font-size: 1rem !important;
   }
   .fs-xxl-7 {
-    font-size: 0.25rem !important;
+    font-size: 0.875rem !important;
   }
   .fs-xxl-8 {
     font-size: 1.25rem !important;
@@ -13329,6 +13329,10 @@ fieldset:disabled .btn {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .border-low-half {

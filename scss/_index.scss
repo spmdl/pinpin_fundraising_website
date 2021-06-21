@@ -13,8 +13,12 @@
   left: 50%;
   transform: translate(-50%,-50%);
 }
+.text-justify{
+  text-align: justify;
+}
+
 @mixin sticky-effect ($top, $height) {
-  position: sticky; 
+  position: sticky;
   overflow: scroll;
   top: $top;
   height: $height;

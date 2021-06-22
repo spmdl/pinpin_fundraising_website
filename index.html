@@ -278,36 +278,42 @@
             <form class="needs-validation" id="form" novalidate>
               <div class="mb-3">
                 <label for="cfs-project" class="form-label text-gray">贊助方案</label>
-                <select class="form-select" id="cfs-project" aria-label="cfs select project">
-                  <option disabled selected="" class="">請選擇一個方案</option>
+                <select class="form-select" id="cfs-project" aria-label="cfs select project" required>
+                  <option disabled selected="" value="">請選擇一個方案</option>
                   <option value="1">方案1</option>
                   <option value="2">方案2</option>
                   <option value="3">方案3</option>
                 </select>
+                <div class="invalid-feedback">請選擇一個方案</div>
               </div>
               <div class="mb-3">
                 <label for="cfs-name" class="form-label text-gray">收件人姓名</label>
-                <input type="text" class="form-control bg-white border-0" id="cfs-name" required>
+                <input type="text" class="form-control" id="cfs-name" required>
+                <div class="invalid-feedback">請輸入正確的收件人姓名</div>
               </div>
               <div class="mb-3">
                 <label for="cfs-phone" class="form-label text-gray">聯絡電話</label>
-                <input type="text" class="form-control bg-white border-0" id="cfs-phone" required>
+                <input type="text" class="form-control" id="cfs-phone" pattern="^09\d{8}$" required>
+                <div class="invalid-feedback">請輸入正確的電話號碼</div>
               </div>
               <div class="mb-3">
                 <label for="cfs-email" class="form-label text-gray">連絡信箱</label>
-                <input type="text" class="form-control bg-white border-0" id="cfs-email" required>
+                <input type="email" class="form-control" id="cfs-email" required>
+                <div class="invalid-feedback">請輸入正確的郵件格式</div>
               </div>
               <div class="mb-9">
                 <label for="cfs-pay-type" class="form-label text-gray">付款方式</label>
-                <select class="form-select" id="cfs-pay-type" aria-label="cfs select pay">
-                  <option selected="">信用卡付款</option>
-                  <option value="1">匯款轉帳</option>
-                  <option value="2">line pay</option>
-                  <option value="3">apple pay</option>
+                <select class="form-select" id="cfs-pay-type" aria-label="cfs select pay" required>
+                  <option disabled selected="" value="">請選擇付款方式</option>
+                  <option value="1">信用卡付款</option>
+                  <option value="2">匯款轉帳</option>
+                  <option value="3">line pay</option>
+                  <option value="4">apple pay</option>
                 </select>
+                <div class="invalid-feedback">請選擇一種付款方式</div>
               </div>
               <button class="btn btn-warning btn-lg rounded-pill fs-10 fw-bold px-5 w-100
-              d-lg-none" type="submit">贊助專案</button>
+              d-lg-none">贊助專案</button>
               <div class="d-none d-lg-flex justify-content-center">
                 <button class="btn btn-warning btn-lg rounded-pill fw-bold px-5" type="submit">贊助專案</button>
               </div>
@@ -411,15 +417,17 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body border-top">
-          <form>
+          <form class="needs-validation" novalidate>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">帳號</label>
-              <input type="email" class="form-control bg-light border-0" id="exampleInputEmail1">
+              <label for="exampleInputEmail1" class="form-label text-gray">帳號</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" required>
+              <div class="invalid-feedback">請輸入帳號</div>
             </div>
             <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">密碼</label>
-              <input type="password" class="form-control bg-light border-0" id="exampleInputPassword1">
+              <label for="exampleInputPassword1" class="form-label text-gray">密碼</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" required>
               <div class="form-text"><a href="#" class="link-secondary text-decoration-none">忘記密碼？</a></div>
+              <div class="invalid-feedback">請輸入密碼</div>
             </div>
             <button type="submit" class="btn btn-warning btn-lg w-100 rounded-pill fw-bold">登入</button>
           </form>

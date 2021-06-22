@@ -26,12 +26,28 @@ function goToTab() {
   });
 }
 // click go to form
+var globalID;
+function formTo() {
+  // 獲取 scrollTop
+  let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+  const scrollIsBottom = scrollTop + document.documentElement.clientHeight < document.body.scrollHeight
+  if (scrollTop < heightToTop(form) - 180 && scrollIsBottom) {
+    document.documentElement.scrollTo(0, Math.floor(scrollTop * 1.008));
+    window.requestAnimationFrame(formTo);
+  }
+  else {
+    cancelAnimationFrame(globalID);
+  }
+}
+
 function goToForm() { 
   // 170 預留空白高度
-  window.scrollTo({
-    top: heightToTop(form) - 160,
-    behavior: "smooth",
-  });
+  // window.scrollTo({
+  //   top: heightToTop(form) - 160,
+  //   behavior: "smooth",
+  // });
+  globalID = requestAnimationFrame(formTo);
+  formTo();
 }
 
 // mobile btn toggle 下選單邏輯：先隱藏 -> nat tab sticky 後再顯示

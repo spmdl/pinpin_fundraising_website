@@ -29,7 +29,7 @@ function goToTab() {
 function goToForm() { 
   // 170 預留空白高度
   window.scrollTo({
-    top: heightToTop(form) - 170,
+    top: heightToTop(form) - 160,
     behavior: "smooth",
   });
 }

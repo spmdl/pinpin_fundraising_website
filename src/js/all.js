@@ -31,8 +31,9 @@ function formTo() {
   // 獲取 scrollTop
   let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
   const scrollIsBottom = scrollTop + document.documentElement.clientHeight < document.body.scrollHeight
+  console.log(scrollTop, scrollIsBottom);
   if (scrollTop < heightToTop(form) - 180 && scrollIsBottom) {
-    document.documentElement.scrollTo(0, Math.floor(scrollTop * 1.008));
+    document.documentElement.scrollTo(0, Math.floor(scrollTop * 1.015));
     window.requestAnimationFrame(formTo);
   }
   else {
@@ -46,6 +47,14 @@ function goToForm() {
   //   top: heightToTop(form) - 160,
   //   behavior: "smooth",
   // });
+
+  // jQuery animate
+  // console.log($("#form"));
+  // window.animate({
+  //   scrollTop: (heightToTop(form) - 160)px,
+  //   scrollLeft: 0,
+  // });
+
   globalID = requestAnimationFrame(formTo);
   formTo();
 }

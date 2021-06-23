@@ -7,6 +7,9 @@
   left: 50%;
   transform: translate(-50%,-50%);
 }
+.shadow-md {
+  box-shadow: 0 0 8px 0 rgba(73, 72, 70, 0.15);
+}
 
 @mixin sticky-effect ($top, $height) {
   position: sticky;

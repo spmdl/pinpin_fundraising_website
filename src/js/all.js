@@ -4,6 +4,18 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 
+const collapseList = document.querySelectorAll('.accordion-item')
+const collapseHeader = document.querySelectorAll('.accordion-header')
+collapseList.forEach((item, idx) => {
+  item.addEventListener('click', (e) => {
+    if (collapseHeader[idx].classList.contains('collapsed')) {
+      item.classList.remove('shadow-md')
+    } else {
+      item.classList.add('shadow-md')
+    }
+  })
+})
+
 // event height to top
 var form = document.getElementById("form");
 var tabContent = document.getElementsByClassName("tab-content")[0];

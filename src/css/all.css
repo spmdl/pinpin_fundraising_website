@@ -5198,7 +5198,7 @@ fieldset:disabled .btn {
 }
 
 .accordion-button:not(.collapsed)::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23636057'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23494846'%3e%3cpath fill-rule='evenodd' d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z' clip-rule='evenodd'/%3e%3c/svg%3e");
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
 }
@@ -5210,7 +5210,7 @@ fieldset:disabled .btn {
   height: 1.25rem;
   margin-left: auto;
   content: "";
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23494846'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23494846'%3e%3cpath fill-rule='evenodd' d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z' clip-rule='evenodd'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-size: 1.25rem;
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
@@ -13635,7 +13635,6 @@ fieldset:disabled .btn {
 
 .nav-link:hover {
   color: #636057;
-  font-weight: bold;
 }
 
 .nav-link.active {
@@ -13654,6 +13653,11 @@ fieldset:disabled .btn {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.shadow-md {
+  -webkit-box-shadow: 0 0 8px 0 rgba(73, 72, 70, 0.15);
+          box-shadow: 0 0 8px 0 rgba(73, 72, 70, 0.15);
 }
 
 .right-side-sticky {
@@ -13677,11 +13681,6 @@ fieldset:disabled .btn {
   border: 1px solid #E5E5E5;
 }
 
-.accordion-flush .accordion-item:active {
-  -webkit-box-shadow: 0 0 8px 0 rgba(73, 72, 70, 0.15);
-          box-shadow: 0 0 8px 0 rgba(73, 72, 70, 0.15);
-}
-
 .accordion-flush .accordion-item .accordion-button {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
@@ -13694,13 +13693,13 @@ fieldset:disabled .btn {
 }
 
 .accordion-flush .accordion-item .accordion-button:not(.collapsed) {
-  border-color: #FFDF65;
+  background-color: #FFDF65;
 }
 
 .accordion-flush .accordion-item .accordion-button::after {
-  background-size: 14px;
-  width: 14px;
-  height: 14px;
+  background-size: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 .img-auto-scale {

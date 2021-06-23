@@ -1,0 +1,30 @@
+.accordion-flush {
+  .accordion-item {
+    border: $accordion-border-width solid $accordion-border-color;
+    @include border-radius($accordion-border-radius);
+  
+    &:first-child { border: $accordion-border-width solid $accordion-border-color; }
+    &:last-child { border: $accordion-border-width solid $accordion-border-color; }
+  
+    &:active {
+      box-shadow: 0 0 8px 0 rgba(73,72,70,0.15);
+    }
+  
+    .accordion-button {
+      @include border-top-radius($accordion-border-radius);
+      background: none; // accordion-button background 會影響到 accordion-item 邊框
+      &:focus {
+        // border: none;
+        box-shadow: 0 0 0 3px rgba($color: $warning, $alpha: .5);
+      }
+      &:not(.collapsed) {
+        border-color: $warning;
+      }
+      &::after {
+        background-size: 14px;
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+}

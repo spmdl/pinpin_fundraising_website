@@ -7,11 +7,14 @@ $gray:          #373A3C;
 $danger:        #FF785E;
 $brown:         #494846;
 
+$gray-100:      #FEFEFE;
+
 $custom-colors: (
   "gray": $gray,
   "brown": $brown,
 );
 $body-color:    $brown;
+$body-bg:       white;
 
 // Border
 $border-color:  #E5E5E5;
@@ -42,6 +45,7 @@ $custom-spacers: (
   7: $spacer * .875, //14
   8: $spacer * 1.25, //20
   9: $spacer * 1.5, //24
+  11: $spacer * 4, //72
 );
 
 // scss-docs-start font-sizes
@@ -71,6 +75,18 @@ $border-radius-pill: 50rem !default;
 // Cards
 // card-variables
 $card-border-radius: $border-radius-lg;
+
+// Accordion
+// accordion-variables
+$accordion-bg: $body-bg !default;
+$accordion-border-radius: .5rem;
+$accordion-border-color: #E5E5E5;
+$accordion-button-active-bg: $accordion-bg;
+$accordion-button-active-color: $dark;
+
+// $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$brown}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
+// $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$brown}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
+
 
 // scss-docs-start grid-breakpoints
 $grid-breakpoints: (

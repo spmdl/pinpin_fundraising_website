@@ -21,6 +21,7 @@ function heightToTop(element) {
 // click nav tab go there 
 function goToTab() {
   window.scrollTo({
+    // top: heightToTop(tabContent) - 115,
     top: heightToTop(tabContent) - 100,
     behavior: "smooth",
   });
@@ -31,7 +32,6 @@ function formTo() {
   // 獲取 scrollTop
   let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
   const scrollIsBottom = scrollTop + document.documentElement.clientHeight < document.body.scrollHeight
-  console.log(scrollTop, scrollIsBottom);
   if (scrollTop < heightToTop(form) - 180 && scrollIsBottom) {
     document.documentElement.scrollTo(0, Math.floor(scrollTop * 1.015));
     window.requestAnimationFrame(formTo);
@@ -48,13 +48,7 @@ function goToForm() {
   //   behavior: "smooth",
   // });
 
-  // jQuery animate
-  // console.log($("#form"));
-  // window.animate({
-  //   scrollTop: (heightToTop(form) - 160)px,
-  //   scrollLeft: 0,
-  // });
-
+  requestAnimationFrame
   globalID = requestAnimationFrame(formTo);
   formTo();
 }

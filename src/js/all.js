@@ -4,14 +4,20 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 
-const collapseList = document.querySelectorAll('.accordion-item')
-const collapseHeader = document.querySelectorAll('.accordion-header')
+const collapseList = document.querySelectorAll('.accordion-item');
+const collapseHeader = document.querySelectorAll('.accordion-header');
+var oldAccordionIndex = "";
 collapseList.forEach((item, idx) => {
   item.addEventListener('click', (e) => {
     if (collapseHeader[idx].classList.contains('collapsed')) {
-      item.classList.remove('shadow-md')
+      item.classList.remove('shadow-md');
+
     } else {
-      item.classList.add('shadow-md')
+      if (oldAccordionIndex !== "") {
+        collapseList[oldAccordionIndex].classList.remove('shadow-md');
+      }
+      oldAccordionIndex = idx;
+      item.classList.add('shadow-md');
     }
   })
 })

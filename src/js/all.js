@@ -5,11 +5,11 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 })
 
 const collapseList = document.querySelectorAll('.accordion-item');
-const collapseHeader = document.querySelectorAll('.accordion-header');
+const collapseButton = document.querySelectorAll('.accordion-button');
 var oldAccordionIndex = "";
 collapseList.forEach((item, idx) => {
   item.addEventListener('click', (e) => {
-    if (collapseHeader[idx].classList.contains('collapsed')) {
+    if (collapseButton[idx].classList.contains('collapsed')) {
       item.classList.remove('shadow-md');
 
     } else {
